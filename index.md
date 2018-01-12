@@ -2,4 +2,3 @@
 
 ---
 
-![image](index.jpg)
