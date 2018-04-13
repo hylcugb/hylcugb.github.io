@@ -10,7 +10,7 @@
 <p style="font-family:Microsoft YaHei;color:rgb(38, 0, 255);font-size:20px">用双脚丈量大地..................</p>
 <a href="https://weibo.com/boudinage/profile?rightmod=1&wvr=6&mod=personinfo">点击关注我的微博</a>
 <a href="tree.html">分支网页</a>
-<a href="tree.md">分支文档</a>
+<a href="https://github.com/hylcugb/hylcugb.github.io/blob/master/tree.md">分支文档</a>
 <hr />
 
 </body>
