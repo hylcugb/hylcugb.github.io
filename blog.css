@@ -55,3 +55,8 @@ iframe
 {
     border-style:none;   
 }
+address
+{
+    color: deepskyblue;
+    font-family:Comic Sans MS;
+}

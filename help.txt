@@ -1,0 +1,6 @@
+全手动更新注意事项，防止遗忘：
+1、进入OhMyGeology等三个文件夹进行新的文章的写作，这是post文件放的地方，用markdown写作完了，
+用vscode转化成html；
+2、转化成的html的body宽度改成780px，因为框架建设的时候，右侧框架是800px；
+3、复制行的博文html文件中的内容到对应的welcome文件；
+4、到对应的list.html文件添加框架中新加的博文。
