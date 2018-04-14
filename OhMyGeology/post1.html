@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>post1</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///C:\Users\HYL\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.3.4\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+ 
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <h1 class="mume-header" id="%E7%8F%AD%E6%80%92%E5%B8%A6%E7%9A%84%E9%97%AE%E9%A2%98"><strong>班怒带的问题</strong></h1>
+
+<h2 class="mume-header" id="%E7%8F%AD%E6%80%92%E6%B4%8B%E5%BD%A2%E6%88%90%E7%9A%84%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%9C%BA%E5%88%B6">班怒洋形成的动力学机制</h2>
+
+<blockquote>
+<p>二叠世（——280Ma）地幔柱岩浆作用是导致冈瓦纳大陆北缘裂解的作用，形成特提斯域</p>
+</blockquote>
+<ul>
+<li>Zhang, Y.X., Zhang, K.J., 2017. Early Permian Qiangtang flood basalts, northern Tibet, China: A mantle plume that disintegrated northern Gondwana? Gondwana Research 44, 96–108.</li>
+</ul>
+<hr>
+<h2 class="mume-header" id="%E7%8F%AD%E6%80%92%E5%B8%A6%E6%BC%94%E5%8C%96%E9%98%B6%E6%AE%B5%E5%92%8C%E6%97%B6%E9%99%90">班怒带演化阶段和时限</h2>
+
+<hr>
+<h2 class="mume-header" id="%E7%8F%AD%E6%80%92%E5%B8%A6%E7%9A%84%E6%B4%8B%E7%9B%86%E6%80%A7%E8%B4%A8%E5%92%8C%E8%A7%84%E6%A8%A1">班怒带的洋盆性质和规模</h2>
+
+<blockquote>
+<p>金沙江古特提斯洋的弧后盆地</p>
+</blockquote>
+<ul>
+<li>刘训, 傅德荣, 姚培毅, 刘桂芳, 王乃文, 1992. 青藏高原不同地体的地层、生物区系及沉积构造演化史. 地质出版社.</li>
+<li>Haines, S.S., Klemperer, S.L., Brown, L., Jingru, G., Mechie, J., Meissner, R., Ross, A., Wenjin, Z., 2003. INDEPTH III seismic data: From surface observations to deep crustal processes in Tibet: INDEPTH III-TIBETAN PLATEAU CRUSTAL PROCESSES. Tectonics 22, n/a-n/a. <a href="https://doi.org/10.1029/2001TC001305">https://doi.org/10.1029/2001TC001305</a></li>
+</ul>
+<blockquote>
+<p>雅江新特提斯洋的弧后盆地</p>
+</blockquote>
+<ul>
+<li>王希斌, 鲍佩声, 陈克樵, 1987. 西藏的蛇绿岩. 地质通报 58–66.</li>
+</ul>
+<blockquote>
+<p>是主特提斯域，为一种多岛弧盆格局，是冈瓦纳大陆的北界</p>
+</blockquote>
+<ul>
+<li>潘桂棠, 朱弟成, 王立全, 廖忠礼, 耿全如, 江新胜, 2004. 班公湖—怒江缝合带作为冈瓦纳大陆北界的地质地球物理证据. 地学前缘 11, 371–382.</li>
+</ul>
+<blockquote>
+<p>晚古生代-早中生代以及中生代印度大陆和亚洲大陆之间不存在广阔深邃的特提斯洋</p>
+</blockquote>
+<ul>
+<li>肖序常, 2000. 青藏高原的构造演化与隆升机制. 广东科技出版社.</li>
+</ul>
+<blockquote>
+<p>为一个走滑断裂带，盆地为走滑拉分性质</p>
+</blockquote>
+<ul>
+<li>余光明, 王成善, 1990. 西藏特提斯沉积地质. 地质出版社.</li>
+</ul>
+<hr>
+<h2 class="mume-header" id="%E7%8F%AD%E6%80%92%E5%B8%A6%E7%9A%84%E4%BF%AF%E5%86%B2%E5%B2%A9%E6%B5%86%E5%B2%A9%E5%B8%A6%E5%92%8C%E5%8F%8C%E5%8F%98%E8%B4%A8%E5%B2%A9%E5%B8%A6">班怒带的俯冲岩浆岩带和双变质岩带</h2>
+
+<blockquote>
+<p>存在洋内俯冲阶段</p>
+</blockquote>
+<ul>
+<li>张旗, 杨瑞英, 1985. 西藏丁青蛇绿岩中玻镁安山岩类的深成岩及其地质意义. 科学通报 30, 1243–1243.</li>
+<li>史仁灯, 2005. 蛇绿岩研究进展、存在问题及思考. 地质论评 51, 681–693.</li>
+<li>史仁灯, 杨经绥, 许志琴, 戚学祥, 2005. 西藏班公湖存在MOR型和SSZ型蛇绿岩——来自两种不同地幔橄榄岩的证据. 岩石矿物学杂志 24, 397–408.</li>
+</ul>
+<hr>
+<blockquote>
+<p>班戈带火山岩是南向俯冲的岛弧</p>
+</blockquote>
+<ul>
+<li>Qiu, R.Z., Zhou, S., Li, T.D., Deng, J.F., Xiao, Q.H., Wu, Z.X., Cai, Z.Y., 2007. The tectonic-setting of ophiolites in the western Qinghai-Tibet Plateau, China. Journal of Asian Earth Sciences 29, 215–228.</li>
+<li>朱弟成, 潘桂棠, 莫宣学, 王立全, 廖忠礼, 赵志丹, 董国臣, 周长勇, 2006. 冈底斯中北部晚侏罗世-早白垩世地球动力学环境:火山岩约束. 岩石学报 22, 534–546.</li>
+</ul>
+<hr>
+<blockquote>
+<p>双向俯冲</p>
+</blockquote>
+<ul>
+<li>Pan, G., Wang, L., Li, R., Yuan, S., Ji, W., Yin, F., Zhang, W., Wang, B., 2012. Tectonic evolution of the Qinghai-Tibet Plateau. Journal of Asian Earth Sciences 53, 3–14. <a href="https://doi.org/10.1016/j.jseaes.2011.12.018">https://doi.org/10.1016/j.jseaes.2011.12.018</a></li>
+</ul>
+<hr>
+<blockquote>
+<p>主流观点认为班怒洋盆向北俯冲</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>岩浆岩带不明显</p>
+</blockquote>
+<ul>
+<li>Yin, A., Harrison, T.M., 2000. Geologic evolution of the Himalayan-Tibetan orogen. Annual Review of Earth and Planetary Sciences 28, 211–280.</li>
+</ul>
+<hr>
+<blockquote>
+<p>岩浆岩带消失于<code>上地壳构造挤压带（supracrustal assemblges）</code></p>
+</blockquote>
+<ul>
+<li>Guynn, J.H., Kapp, P., Pullen, A., Heizler, M., Gehrels, G., Ding, L., 2006. Tibetan basement rocks near Amdo reveal “missing” Mesozoic tectonism along the Bangong suture, central Tibet. Geology 34, 505–508.</li>
+</ul>
+<hr>
+<h2 class="mume-header" id="%E8%81%82%E8%8D%A3%E5%92%8C%E5%98%89%E7%8E%89%E6%A1%A5%E5%8F%98%E8%B4%A8%E5%BE%AE%E9%99%86%E5%9D%97%E5%9C%A8%E7%8F%AD%E6%80%92%E6%B4%8B%E6%BC%94%E5%8C%96%E4%B8%AD%E7%9A%84%E8%A7%92%E8%89%B2">聂荣和嘉玉桥变质微陆块在班怒洋演化中的角色</h2>
+
+<blockquote>
+<p>认识不足，提到有下列文献</p>
+</blockquote>
+<ul>
+<li>西藏自治区地质矿产局，1993</li>
+<li>Guynn, J.H., Kapp, P., Pullen, A., Heizler, M., Gehrels, G., Ding, L., 2006. Tibetan basement rocks near Amdo reveal “missing” Mesozoic tectonism along the Bangong suture, central Tibet. Geology 34, 505–508.</li>
+</ul>
+<hr>
+<h2 class="mume-header" id="%E7%BC%9D%E5%90%88%E5%B8%A6%E9%97%AD%E5%90%88%E6%A8%A1%E5%BC%8F%E4%BB%A5%E5%8F%8A%E5%8D%97%E5%8C%97%E4%B8%A4%E4%BE%A7%E8%9B%87%E7%BB%BF%E5%B2%A9%E6%9E%84%E9%80%A0%E5%B1%9E%E6%80%A7">缝合带闭合模式以及南北两侧蛇绿岩构造属性</h2>
+
+<blockquote>
+<p>前人认为在班怒带中段断续出露的蛇绿岩，是大洋岩石圈与晚三叠世-中侏罗世向北俯冲，后相关的蛇绿岩于晚侏罗世-早白垩世向南逆冲推覆于拉萨地体之上</p>
+</blockquote>
+<ul>
+<li>Burg, J., Chen, G., 1984. Tectonics and structural zonation of southern Tibet. Nature 311, 219–223.</li>
+<li>C. J. Allégre, Courtillot, V., Tapponnier, P., Hirn, A., Mattauer, M., Coulon, C., Jaeger, J.J., Achache, J., U. Schärer, Marcoux, J., 1984. Structure and evolution of the Himalaya-Tibet orogenic belt. Nature 307, 17–22.</li>
+<li>Girardeau, J., Marcoux, J., AllÈ, C.J., Bassoullet, J.P., Tang, Y., Xiao, X., Zao, Y., Wang, X., 1984. Tectonic environment and geodynamic significance of the Neo-Cimmerian Donqiao ophiolite, Bangong-Nujiang suture zone, Tibet. Nature 307, 27–31.</li>
+<li>Girardeau, J., Marcoux, J., Fourcade, E., Bassoullet, J.P., Youking, T., 1985. Xainxa ultramafic rocks, central Tibet, China: Tectonic environment and geodynamic significance. Geology 13, 330.</li>
+<li>Chang Chengfa, Chen Nansheng, M. P. Coward, Deng Wanming, J. F. Dewey, A. Gansser, N. B. W. Harris, Jin Chengwei, W. S. F. Kidd, M. R. Leeder, 1986. Preliminary conclusions of the Royal Society and Academia Sinica 1985 geotraverse of Tibet. Nature 323, 501–507.</li>
+<li>W. S. F. Kidd, Pan Yusheng, Chang Chengfa, M. P. Coward, J. F. Dewey, A. Gansser, P. Molnar, R. M. Shackleton, Sun Yiyin, 1988. Geological Mapping of the 1985 Chinese--British Tibetan (Xizang--Qinghai) Plateau Geotraverse Route. Philosophical Transactions of the Royal Society of London. Series A, Mathematical and Physical Sciences 327, 287–305.</li>
+<li>John F. Dewey, 1988. The Tectonic Evolution of the Tibetan Plateau. Philosophical Transactions of the Royal Society of London A Mathematical Physical &amp; Engineering Sciences 327, 379–413.</li>
+<li>Kidd, R.G.W., 1977. A model for the process of formation of the upper oceanic crust. Geophysical Journal International 50, 149–183.</li>
+</ul>
+<hr>
+<blockquote>
+<p>对于拉萨北部的申扎-纳木错蛇绿岩成因，有两种对立观点:</p>
+<blockquote>
+<p>原地说：原地缝合带遗迹</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>Hsü, K., PanGuitang, Sengã¶R, A.M.C., 1995. Tectonic Evolution of the Tibetan Plateau: A Working Hypothesis Based on the Archipelago Model of Orogenesis. International Geology Review 37, 473–508.</li>
+<li>Matte et al，1996</li>
+<li>Pan, G., Wang, L., Li, R., Yuan, S., Ji, W., Yin, F., Zhang, W., Wang, B., 2012. Tectonic evolution of the Qinghai-Tibet Plateau. Journal of Asian Earth Sciences 53, 3–14. <a href="https://doi.org/10.1016/j.jseaes.2011.12.018">https://doi.org/10.1016/j.jseaes.2011.12.018</a></li>
+</ul>
+<blockquote>
+<blockquote>
+<p>异地说：北部班怒带向南逆冲推覆到拉萨北缘的产物</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>Girardeau, J., Marcoux, J., AllÈ, C.J., Bassoullet, J.P., Tang, Y., Xiao, X., Zao, Y., Wang, X., 1984. Tectonic environment and geodynamic significance of the Neo-Cimmerian Donqiao ophiolite, Bangong-Nujiang suture zone, Tibet. Nature 307, 27–31.</li>
+<li>刘増乾, 1990. 青藏高原大地构造与形成演化. 地质出版社.</li>
+<li>刘训, 傅德荣, 姚培毅, 刘桂芳, 王乃文, 1992. 青藏高原不同地体的地层、生物区系及沉积构造演化史. 地质出版社.</li>
+</ul>
+<hr>
+<blockquote>
+<p>对于中西段狮泉河、拉果错，以及东段的丁青和八宿，也有这样的争议</p>
+</blockquote>
+<ul>
+<li>Kapp, P., Murphy, M.A., Yin, A., Harrison, T.M., Ding, L., Guo, J., 2003. Mesozoic and Cenozoic tectonic evolution of the Shiquanhe area of western Tibet: TECTONIC EVOLUTION OF WESTERN TIBET. Tectonics 22, n/a-n/a. <a href="https://doi.org/10.1029/2001TC001332">https://doi.org/10.1029/2001TC001332</a></li>
+</ul>
+<hr>
+<h2 class="mume-header" id="%E7%8F%AD%E6%80%92%E5%B8%A6%E5%9C%A8%E9%AB%98%E5%8E%9F%E6%BC%94%E5%8C%96%E4%B8%AD%E7%9A%84%E5%9C%B0%E4%BD%8D">班怒带在高原演化中的地位</h2>
+
+<blockquote>
+<p>对青藏高原的演化和隆升有重要意义</p>
+</blockquote>
+<ul>
+<li>Murphy, M.A., Yin, A., Harrison, T.M., Dürr, S.B., Chen, Z., Ryerson, F.J., Kidd, W.S.F., Wang, X., Zhou, X., 1997. Did the Indo-Asian collision alone create the Tibetan plateau? Geology 25, 719–722.</li>
+<li>Yin, A., Harrison, T.M., 2000. Geologic evolution of the Himalayan-Tibetan orogen. Annual Review of Earth and Planetary Sciences 28, 211–280.</li>
+<li>Kapp, P., Murphy, M.A., Yin, A., Harrison, T.M., Ding, L., Guo, J., 2003. Mesozoic and Cenozoic tectonic evolution of the Shiquanhe area of western Tibet: TECTONIC EVOLUTION OF WESTERN TIBET. Tectonics 22, n/a-n/a. <a href="https://doi.org/10.1029/2001TC001332">https://doi.org/10.1029/2001TC001332</a></li>
+<li>Kapp, P., Yin, A., Harrison, T.M., Ding, L., 2005. Cretaceous-Tertiary shortening, basin development, and volcanism in central Tibet. Geological Society of America Bulletin 117, 865–878.</li>
+</ul>
+<blockquote>
+<p>拉萨和羌塘的碰撞造山没有引起青藏高原的强烈隆升</p>
+</blockquote>
+<ul>
+<li>Zhang, K.J., 2001. Blueschist-bearing metamorphic core complexes in the Qiangtang block reveal deep crustal structure of northern Tibet: Comment and Reply COMMENT. Geology 29, 90–90.</li>
+<li>Zhang, K.J., Xia, B.D., Wang, G.M., Li, Y.T., Ye, H.F., 2004. Early Cretaceous stratigraphy, depositional environments, sandstone provenance, and tectonic setting of central Tibet, western China. Geological Society of America Bulletin 116, 1202.</li>
+<li>Zhang, K.-J., 2004. Secular geochemical variations of the Lower Cretaceous siliciclastic rocks from central Tibet (China) indicate a tectonic transition from continental collision to back-arc rifting. Earth and Planetary Science Letters 229, 73–89. <a href="https://doi.org/10.1016/j.epsl.2004.10.030">https://doi.org/10.1016/j.epsl.2004.10.030</a></li>
+</ul>
+<hr>
+<h2 class="mume-header" id="%E7%8F%AD%E6%80%92%E5%B8%A6%E5%AF%B9%E7%9B%86%E5%9C%B0%E7%9A%84%E6%8E%A7%E5%88%B6">班怒带对盆地的控制</h2>
+
+<blockquote>
+<p>北侧的羌塘盆地</p>
+</blockquote>
+<ul>
+<li>王成善, 2001. 西藏羌塘盆地地质演化与油气远景评价. 地质出版社.</li>
+<li>张玉修, 张开均, 夏邦栋, 谢尧武, 2006. 西藏羌塘地体三叠纪-侏罗纪海相砂岩颗粒组分及其构造意义. 沉积学报 24, 15–24.</li>
+<li>Zhang, K.J., Zhang, Y.X., Xia, B.D., He, Y.B., 2006. Temporal Variations of Mesozoic Sandstone Compositions in the Qiangtang Block, Northern Tibet (China): Implications for Provenance and Tectonic Setting. Journal of Sedimentary Research 76, 1035–1048.</li>
+</ul>
+<hr>
+<blockquote>
+<p>南侧的措勤和比如盆地</p>
+</blockquote>
+<ul>
+<li>Zhang, K.J., Xia, B.D., Wang, G.M., Li, Y.T., Ye, H.F., 2004. Early Cretaceous stratigraphy, depositional environments, sandstone provenance, and tectonic setting of central Tibet, western China. Geological Society of America Bulletin 116, 1202.</li>
+<li>Zhang, K.J., 2004. Secular geochemical variations of the Lower Cretaceous siliciclastic rocks from central Tibet (China) indicate a tectonic transition from continental collision to back-arc rifting. Earth &amp; Planetary Science Letters 229, 73–89.</li>
+</ul>
+<hr>
+<h2 class="mume-header" id="%E6%96%B0%E7%94%9F%E4%BB%A3%E7%9B%86%E5%9C%B0%E9%97%AE%E9%A2%98">新生代盆地问题</h2>
+
+<ul>
+<li>赵文津, 刘葵, 蒋忠惕, 吴珍汉, 赵逊, 史大年, 熊嘉育, J.Mechie, L.Brown, T.Hearn, 2004. 西藏班公湖-怒江缝合带——深部地球物理结构给出的启示. 地质通报 23, 623–635.</li>
+</ul>
+<hr>
+<hr>
+
+      </div>
+      <div class="md-sidebar-toc"><ul>
+<li><a href="#%E7%8F%AD%E6%80%92%E5%B8%A6%E7%9A%84%E9%97%AE%E9%A2%98"><strong>班怒带的问题</strong></a>
+<ul>
+<li><a href="#%E7%8F%AD%E6%80%92%E6%B4%8B%E5%BD%A2%E6%88%90%E7%9A%84%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%9C%BA%E5%88%B6">班怒洋形成的动力学机制</a></li>
+<li><a href="#%E7%8F%AD%E6%80%92%E5%B8%A6%E6%BC%94%E5%8C%96%E9%98%B6%E6%AE%B5%E5%92%8C%E6%97%B6%E9%99%90">班怒带演化阶段和时限</a></li>
+<li><a href="#%E7%8F%AD%E6%80%92%E5%B8%A6%E7%9A%84%E6%B4%8B%E7%9B%86%E6%80%A7%E8%B4%A8%E5%92%8C%E8%A7%84%E6%A8%A1">班怒带的洋盆性质和规模</a></li>
+<li><a href="#%E7%8F%AD%E6%80%92%E5%B8%A6%E7%9A%84%E4%BF%AF%E5%86%B2%E5%B2%A9%E6%B5%86%E5%B2%A9%E5%B8%A6%E5%92%8C%E5%8F%8C%E5%8F%98%E8%B4%A8%E5%B2%A9%E5%B8%A6">班怒带的俯冲岩浆岩带和双变质岩带</a></li>
+<li><a href="#%E8%81%82%E8%8D%A3%E5%92%8C%E5%98%89%E7%8E%89%E6%A1%A5%E5%8F%98%E8%B4%A8%E5%BE%AE%E9%99%86%E5%9D%97%E5%9C%A8%E7%8F%AD%E6%80%92%E6%B4%8B%E6%BC%94%E5%8C%96%E4%B8%AD%E7%9A%84%E8%A7%92%E8%89%B2">聂荣和嘉玉桥变质微陆块在班怒洋演化中的角色</a></li>
+<li><a href="#%E7%BC%9D%E5%90%88%E5%B8%A6%E9%97%AD%E5%90%88%E6%A8%A1%E5%BC%8F%E4%BB%A5%E5%8F%8A%E5%8D%97%E5%8C%97%E4%B8%A4%E4%BE%A7%E8%9B%87%E7%BB%BF%E5%B2%A9%E6%9E%84%E9%80%A0%E5%B1%9E%E6%80%A7">缝合带闭合模式以及南北两侧蛇绿岩构造属性</a></li>
+<li><a href="#%E7%8F%AD%E6%80%92%E5%B8%A6%E5%9C%A8%E9%AB%98%E5%8E%9F%E6%BC%94%E5%8C%96%E4%B8%AD%E7%9A%84%E5%9C%B0%E4%BD%8D">班怒带在高原演化中的地位</a></li>
+<li><a href="#%E7%8F%AD%E6%80%92%E5%B8%A6%E5%AF%B9%E7%9B%86%E5%9C%B0%E7%9A%84%E6%8E%A7%E5%88%B6">班怒带对盆地的控制</a></li>
+<li><a href="#%E6%96%B0%E7%94%9F%E4%BB%A3%E7%9B%86%E5%9C%B0%E9%97%AE%E9%A2%98">新生代盆地问题</a></li>
+</ul>
+</li>
+</ul>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    </body>
+    
+    
+    
+    
+    
+    
+    <script>
+(function bindTaskListEvent() {
+  var taskListItemCheckboxes = document.body.getElementsByClassName('task-list-item-checkbox')
+  for (var i = 0; i < taskListItemCheckboxes.length; i++) {
+    var checkbox = taskListItemCheckboxes[i]
+    var li = checkbox.parentElement
+    if (li.tagName !== 'LI') li = li.parentElement
+    if (li.tagName === 'LI') {
+      li.classList.add('task-list-item')
+    }
+  }
+}())    
+</script>
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  </html>
